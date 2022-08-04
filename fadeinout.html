@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+
+        }
+
+        #one {
+            height: 100px;
+            width: 100px;
+            background: rgb(6, 29, 230);
+            margin-bottom: 10px;
+            margin-left: 10px;
+        }
+
+        #two {
+            height: 100px;
+            width: 100px;
+            background: black;
+            margin-bottom: 10px;
+            margin-left: 10px;
+        }
+
+        #three {
+            height: 100px;
+            width: 100px;
+            background: rgb(5, 236, 94);
+            margin-bottom: 10px;
+            margin-left: 10px;
+        }
+        #four {
+            height: 100px;
+            width: 100px;
+            background: rgb(236, 32, 5);
+            margin-bottom: 10px;
+            margin-left: 10px;
+        }
+        #btn1 {
+            margin-left: 10px;
+            margin-bottom: 40px;
+            height: 50px;
+            width: 100px;
+        }
+        #btn2 {
+            margin-left: 10px;
+            margin-bottom: 40px;
+            height: 50px;
+            width: 100px;
+        }
+    </style>
+</head>
+<center>
+<body>
+    <big><h1>fadeIn And fadeOut</h1></big></br>
+    <button id="btn1" onclick="strt()" style="background-color: aqua;">Fade Out</button>&nbsp;&nbsp;
+    <button id="btn2" onclick="strt()" style="background-color: aquamarine;">Fade In</button>
+    <div id="one" style="margin-left: 350px;"></div>
+    <div id="two" style="margin-right:350px;"></div>
+    <div id="three" style="margin-left:350px;"></div>
+    <div id="four" style="margin-right:350px;"></div>
+
+    <script>
+        $(document).ready(function () {
+            $("#btn1").click(function () {
+                $("#one").fadeOut(5500)
+                $("#two").fadeOut(4500);
+                $("#three").fadeOut(3500);
+                $("#four").fadeOut(2500);
+            });
+
+            $("#btn2").click(function () {
+                $("#one").fadeIn(3000)
+                $("#two").fadeIn(4000);
+                $("#three").fadeIn(5000);
+                $("#four").fadeIn(6000);
+            });
+        })
+
+    </script>
+
+</body>
+</center>
+</html>
